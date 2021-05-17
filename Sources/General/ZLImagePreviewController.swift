@@ -38,9 +38,9 @@ public class ZLImagePreviewController: UIViewController {
     
     static let selPhotoPreviewH: CGFloat = 100
     
-    let datas: [Any]
+    public let datas: [Any]
     
-    var selectStatus: [Bool]
+    public var selectStatus: [Bool]
     
     let urlType: ( (URL) -> ZLURLType )?
     
@@ -50,31 +50,31 @@ public class ZLImagePreviewController: UIViewController {
     
     let showBottomView: Bool
     
-    var currentIndex: Int
+    public var currentIndex: Int
     
-    var indexBeforOrientationChanged: Int
+    public var indexBeforOrientationChanged: Int
     
-    var collectionView: UICollectionView!
+    public var collectionView: UICollectionView!
     
-    var navView: UIView!
+    public var navView: UIView!
     
-    var navBlurView: UIVisualEffectView?
+    public var navBlurView: UIVisualEffectView?
     
-    var backBtn: UIButton!
+    public var backBtn: UIButton!
     
-    var indexLabel: UILabel!
+    public var indexLabel: UILabel!
     
-    var selectBtn: UIButton!
+    public var selectBtn: UIButton!
     
-    var bottomView: UIView!
+    public var bottomView: UIView!
     
-    var bottomBlurView: UIVisualEffectView?
+    public var bottomBlurView: UIVisualEffectView?
     
-    var doneBtn: UIButton!
+    public var doneBtn: UIButton!
     
-    var isFirstAppear = true
+    public var isFirstAppear = true
     
-    var hideNavView = false
+    public var hideNavView = false
     
     @objc public var doneBlock: ( ([Any]) -> Void )?
     
